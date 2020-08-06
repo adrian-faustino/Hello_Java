@@ -5,7 +5,10 @@ public class Main {
     public static void main(String[] args) {
 	// write your code here
         String name = revereString("Adrian");
-        System.out.println(name);
+        String pallindrome = "racecare";
+        boolean isPallindrome = checkPallindrome(pallindrome);
+
+        System.out.println(isPallindrome);
     }
 
     // reverse string: dog -> god
@@ -24,5 +27,17 @@ public class Main {
         }
 
         return reverse;
+    }
+
+    // pallindrome: racecar -> racecar
+    public static boolean checkPallindrome(String s) {
+        String a = s;
+        String b = revereString((s));
+
+        if (a.equals(b)) {
+            return true;
+        } else {
+            return false;
+        }
     }
 }
