@@ -11,10 +11,10 @@ public class Main {
         int b = 6;
         int sum = addTwoNumbers(a, b);
 
-        int num = 36;
-
-
-        System.out.println(oddOrEven(num));
+        int num1 = 36;
+        int num2 = 37;
+        int num3 = 38;
+        System.out.println(greatestNum(num3, num2, num1));
     }
 
     // reverse string: dog -> god
@@ -61,5 +61,16 @@ public class Main {
         } else {
             return num + " is odd.";
         }
+    }
+
+    // Take three numbers from the user and print the greatest number.
+    public static String greatestNum(int a, int b, int c) {
+        int greatest = a;
+        if (b > a & b > c) {
+            greatest = b;
+        } else if (c > a & c > b) {
+            greatest = c;
+        }
+        return greatest + " is the greatest number.";
     }
 }
