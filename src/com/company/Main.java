@@ -7,8 +7,14 @@ public class Main {
         String name = revereString("Adrian");
         String pallindrome = "racecare";
         boolean isPallindrome = checkPallindrome(pallindrome);
+        int a = 5;
+        int b = 6;
+        int sum = addTwoNumbers(a, b);
 
-        System.out.println(isPallindrome);
+        int num = 36;
+
+
+        System.out.println(oddOrEven(num));
     }
 
     // reverse string: dog -> god
@@ -38,6 +44,22 @@ public class Main {
             return true;
         } else {
             return false;
+        }
+    }
+
+    // add 2 numbers
+    public static int addTwoNumbers(int a, int b) {
+        int result = 0;
+        result = a + b;
+        return result;
+    }
+
+    // odd or even. 35 -> "35 is odd."
+    public static String oddOrEven(int num) {
+        if (num % 2 == 0) {
+            return num + " is even.";
+        } else {
+            return num + " is odd.";
         }
     }
 }
