@@ -14,7 +14,14 @@ public class Main {
         int num1 = 36;
         int num2 = 37;
         int num3 = 38;
-        System.out.println(greatestNum(num3, num2, num1));
+
+        HashMapTutorial instance = new HashMapTutorial();
+        instance.getHash().put("c", 3);
+        instance.showHash();
+
+        HashMapTutorial instance2 = new HashMapTutorial();
+        instance2.getHash().put("z", 99);
+        instance2.showHash();
     }
 
     // reverse string: dog -> god
